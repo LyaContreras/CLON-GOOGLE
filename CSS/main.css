@@ -1,0 +1,184 @@
+body{
+    /*MARGIN / margen predetermiando*/
+    margin: 0;
+    /*PADDING/ margen para adentro*/
+    padding: 0;
+    /*FONT-SIZE / tamaño de texto*/
+    font-size: 12px;
+    /*FONT-FAMILY / fuente del texto*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*NAVEGACIÓN*/
+
+header{
+    /*WIDTH / ancho*/
+    width: 100%;
+    /*HEIGHT / alto*/
+    height: 55px;
+}
+
+header nav{
+    /*DISPLAY / Cómo se puede mover el elemento*/
+        /*FLEX / flexibilidad para los elementos*/
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    /*Eliminar viñetas*/
+    list-style: none;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*HEIGHT / Altura*/
+    height: auto;
+}
+
+nav .nav-right-section a{
+    /*Color de texto*/
+    color: rgb(21, 21, 21);
+    /*Línea debajo de*/
+    text-decoration: none;
+    /*Margen derecho*/
+    margin-right: 25px;
+}
+
+nav .nav-right-section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 20px;
+    height: 20px;
+    /*Contiene a la imagen*/
+    background-size: contain;
+}
+
+nav .nav-right-section img{
+    /*MARGIN LEFT / margen únicamente a la izquierda*/
+    margin-left: 20px;
+    border-radius: 100px;
+    /*WIDHT / anchura*/
+    width: 35px;
+}
+
+
+/*MAIN*/
+
+main{
+    text-align: center;
+    margin-top: 160px;
+}
+
+/*Sección logo*/
+main .main-logo{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+/*Logo Google*/
+main .main-logo img{
+    height: 100px;
+}
+
+/*Sección input*/
+main .main-input{
+    /*Anchura*/
+    width: 550px;
+    /*Márgenes y centrado*/
+    margin: 0 auto;
+    /*Separar botones de input*/
+    margin-bottom: 40px;
+}
+
+/*Cajita gris redondeada buscador*/
+main .main-input-container{
+    /*Ancho de línea, estilo y color*/
+    border: 1px solid #dfe1e5;
+    /*Bordes redondeados*/
+    border-radius: 30px;
+    width: 530px;
+    /*Que mis componentes san flexibles y se muevan*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input{
+    height: 40px;
+    width: 450px;
+    /*Quitar borde negro*/
+    border: none;
+    /*Quitar borde al hacer click*/
+    outline: none;
+}
+
+main .main-input .search-icon{
+    /*Poner una imágen*/
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    /*Centrar la imágen*/
+    background-position: center;
+    /*Tamaño del ícono*/
+    width: 15px;
+    height: 15px;
+    /*Ícono contenido*/
+    background-size: contain;
+    padding-left: 6%;
+    background-repeat: no-repeat;
+}
+
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    width: 17px;
+    height: 17px;
+    /*Ícono contenido en el espacio*/
+    background-size: contain;
+    background-position: center;
+    padding-left: 1%;
+    background-repeat: no-repeat;
+}
+
+main .main-input .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    width: 17px;
+    height: 17px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-right: 6%;
+}
+
+main .main-buttons{
+    width: 550px;
+    /*Vertical / Horizontal*/
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    /*Alinear elementos en la misma línea*/
+    display: inline-block;
+}
+
+main .main-buttons buttons.{
+    border: 0;
+    height: 40px;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    color: #3c4043;
+    border-radius: 4px;
+    margin-right: 10px;
+    padding: 0 15px;
+}
+
+/*Nos permite agregarle diseño al poner cursor sobre el elemento*/
+main .main-input-container:hover{
+    box-shadow: 0px 0px 5px #20212447;
+}
+
+main .main-buttons button:hover{
+    color: #20212447;
+    /*Ancho de línea / Estilo de línea / Color*/
+    border: 1px solid #dadc30;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
